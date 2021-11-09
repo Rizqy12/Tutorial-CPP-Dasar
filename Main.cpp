@@ -98,7 +98,7 @@ void writedata(mahasiswa &mhs ,fstream &data){
 }
 //fungsi void untuk baca data
 void readdata(mahasiswa &mhs , fstream &data){
-    data.open("mahasiswa.txt", ios::in | ios::binary);
+    data.open("mahasiswa.txt", ios::in);
     data >> mhs.pk;
     data >> mhs.nama;
     data >> mhs.jurusan;
